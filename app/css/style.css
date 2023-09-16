@@ -192,7 +192,10 @@ button {
   font-family: "Avenir Next LT Pro"
 }
 :root {
-  --container: 1140px
+  --container: 1140px;
+  --black: #353C45;
+  --white: #FFF;
+  --body-bgd: #F8F8F8
 }
 body {
   margin: 0;
@@ -201,7 +204,8 @@ body {
   line-height: 1.5;
   letter-spacing: .02em;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box
+  box-sizing: border-box;
+  background-color: var(--body-bgd)
 }
 main {
   overflow-x: hidden
@@ -269,4 +273,46 @@ textarea {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden
+}
+.header {
+  padding: 16px 15px;
+  background-color: var(--white)
+}
+.header__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 12px
+}
+.header__logo {
+  max-width: 107px
+}
+.header__logo_dt {
+  display: none
+}
+.header__txt {
+  color: var(--black);
+  font-size: 10px;
+  font-weight: 500
+}
+@media screen and (min-width:768px) {
+  .header .header {
+    padding: 19px 15px
+  }
+  .header__inner {
+    gap: 40px
+  }
+  .header__logo {
+    display: none
+  }
+  .header__logo_dt {
+    display: block;
+    max-width: 185px
+  }
+  .header__txt {
+    font-size: 16px
+  }
 }
