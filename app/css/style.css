@@ -464,7 +464,8 @@ textarea {
   padding: 5px 9px;
   border-radius: 8px;
   width: 100%;
-  max-width: 660px
+  max-width: 660px;
+  margin-bottom: 7px
 }
 .shopping .delivery__photo {
   width: 8px;
@@ -473,5 +474,27 @@ textarea {
 .shopping .delivery__txt {
   color: var(--green);
   font-size: 8px;
+  font-weight: 600
+}
+.shopping .item__options li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 10px;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start
+}
+.shopping .item__options li:last-child {
+  margin-bottom: 0
+}
+.shopping .item__options img {
+  width: 9px;
+  margin-right: 3px;
+  margin-top: 3px
+}
+.shopping .item__options p {
+  color: var(--black);
+  font-size: 10px;
   font-weight: 600
 }

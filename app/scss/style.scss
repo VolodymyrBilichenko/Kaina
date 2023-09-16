@@ -308,6 +308,7 @@ select {
 		border-radius: 8px;
 		width: 100%;
 		max-width: 660px;
+		margin-bottom: 7px;
 
 		&__photo{
 			width: 8px;
@@ -317,6 +318,29 @@ select {
 		&__txt{
 			color: var(--green);
 			font-size: 8px;
+			font-weight: 600;
+		}
+	}
+
+	.item__options {
+		li{
+			display: flex;
+			margin-bottom: 10px;
+			align-items: flex-start;
+			&:last-child{
+				margin-bottom: 0;
+			}
+		}
+
+		img{
+			width: 9px;
+			margin-right: 3px;
+			margin-top: 3px;
+		}
+
+		p{
+			color: var(--black);
+			font-size: 10px;
 			font-weight: 600;
 		}
 	}
