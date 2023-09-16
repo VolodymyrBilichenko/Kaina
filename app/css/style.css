@@ -196,7 +196,9 @@ button {
   --black: #353C45;
   --white: #FFF;
   --body-bgd: #F8F8F8;
-  --green: linear-gradient(90deg, #7BBE03 0%, #BCEC0E 100%)
+  --green-banner: linear-gradient(90deg, #7BBE03 0%, #BCEC0E 100%);
+  --green: #159F0A;
+  --green-bgd: rgba(21, 159, 10, 0.10)
 }
 body {
   margin: 0;
@@ -321,7 +323,7 @@ textarea {
   padding: 20px 0
 }
 .banner__inner {
-  background: var(--green);
+  background: var(--green-banner);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -414,4 +416,62 @@ textarea {
   .option__br_d {
     display: block
   }
+}
+.shopping__list {
+  width: 100%
+}
+.shopping .list__href {
+  margin-bottom: 15px
+}
+.shopping .list__href__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 4px;
+  color: var(--black);
+  font-size: 10px
+}
+.shopping .list__href__icon {
+  width: 11px
+}
+.shopping .list__item {
+  width: 100%
+}
+.shopping .list__item__type {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 5px
+}
+.shopping .list__item__photo {
+  max-width: 100px
+}
+.shopping .list__item__options {
+  width: 100%
+}
+.shopping .delivery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background: var(--green-bgd);
+  padding: 5px 9px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 660px
+}
+.shopping .delivery__photo {
+  width: 8px;
+  margin-right: 5px
+}
+.shopping .delivery__txt {
+  color: var(--green);
+  font-size: 8px;
+  font-weight: 600
 }
