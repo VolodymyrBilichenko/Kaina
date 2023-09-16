@@ -132,7 +132,7 @@ select {
 	}
 
 	@media screen and (min-width: 768px){
-		.header{
+		&{
 			padding: 19px 15px;
 		}
 
@@ -189,4 +189,76 @@ select {
 	&__window{
 		max-width: 87px;
 	}
+}  // доробити 
+
+.option{
+	padding-bottom: 30px;
+
+	&__list{
+		display: flex;
+		gap: 20px 20px;
+		flex-wrap: wrap;
+		justify-content: center;
+
+		&__card{
+			display: flex;
+			align-items: center;
+			gap: 5px;
+		}
+
+		&__icon{
+			width: 24px;
+		}
+
+		&__txt{
+			color: var(--black);
+			font-size: 12px;
+
+			&_bold{
+				font-weight: 600;
+			}
+		}
+	}
+
+	&__br_d{
+		display: none;
+	}
+
+	@media screen and (min-width: 768px){
+		&{
+			padding-bottom: 51px;
+		}
+
+		&__list{
+			justify-content: space-between;
+
+			&__icon {
+				width: 36px;
+			}
+	
+			&__txt {
+				font-size: 16px;
+				&_width{
+					min-width: 280px;
+				}
+			}
+
+			&__card{
+				gap: 13px;
+			}
+		}
+
+		&__br_m {
+			display: none;
+		}
+		&__br_d {
+			display: block;
+		}
+	}
 }
+
+
+
+
+
+// @media screen and (min-width: 768px)
