@@ -4,7 +4,9 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-family: 'Avenir Next LT Pro';
+	font-family: 'AvenirNext LT Pro';
+	font-weight: bold;
+	font-style: normal;
 }
 
 :root{
@@ -16,6 +18,11 @@
 	--green-banner: linear-gradient(90deg, #7BBE03 0%, #BCEC0E 100%);
 	--green: #159F0A;
 	--green-bgd: rgba(21, 159, 10, 0.10);
+	--grey: #737373;
+	--grey-sel: #353C45;
+	--orange: #FD990A;
+	--orange-hover: #DF8300; 
+	--blue: #0F8CD1;
 }
 
 body {
@@ -80,7 +87,7 @@ button {
 img {
 	display: block;
 	width: 100%;
-	height: auto;
+	height: 100%;
 }
 
 input,
@@ -201,6 +208,7 @@ select {
 		gap: 20px 20px;
 		flex-wrap: wrap;
 		justify-content: center;
+		align-items: flex-start;
 
 		&__card{
 			display: flex;
@@ -281,8 +289,22 @@ select {
 		}
 	}
 
+	.item__nemokamas{
+		width: 100%;
+	}
+
 	.list__item{
 		width: 100%;
+		border-radius: 12px;
+		background: #FFF;
+		box-shadow: 0px 4px 50px 0px rgba(0, 0, 0, 0.10);
+		padding: 10px 10px 26px;
+		transition: all 0.3s ease;
+		border-bottom: 3px solid var(--white);
+
+		&:hover{
+			border-bottom: 3px solid var(--blue);
+		}
 
 		&__type{
 			width: 100%;
@@ -341,13 +363,145 @@ select {
 		p{
 			color: var(--black);
 			font-size: 10px;
-			font-weight: 400;
+			font-weight: 600;
 		}
 	}
-}
+
+	.item__price{
+		margin-top: 15px;
+		display: flex;
+		gap: 30px;
+
+		button{
+			display: flex;
+			align-items: center;
+			height: 34px;
+			margin-top: auto;
+			margin-bottom: 10px;
+			padding: 12px;
+			background-color: var(--orange);
+			border-radius: 8px;
+			box-shadow: 0px 4px 20px 0px rgba(253, 153, 10, 0.25);
+			transition: all 0.3s ease;
+
+			color: var(--white);
+			font-size: 10px;
+			font-weight: 700;
+			letter-spacing: 0.3px;
+			width: auto;
+			white-space: nowrap;
+
+			&:hover{
+				background-color: var(--orange-hover);
+			}
+
+			img{
+				width: 10px;
+			}
+
+			span{
+				display: none;
+				color: var(--white);
+				font-size: 14px;
+				font-weight: 700;
+			}
+		}
+
+		@media screen and (min-width: 768px) {
+			.item__price{
+				display: flex;
+			}
+
+			button {
+			padding: 17px 20px;
+			font-size: 14px;
+			height: 52px;
+
+			img {
+				width: 18px;
+			}
+
+			span {
+				display: block;
+			}
+			}
+		}
+	}
+
+	// .item__options__price {
+	// 	display: flex;
+	// 	justify-content: space-between;
+	// 	gap: 30px;
+	// 	.item__price {
+
+	// 		@media screen and (min-width: 768px){
+	// 			// display: block;
+	// 			// margin-top: 0;
+	// 			display: flex;
+
+	// 			button{
+	// 				margin-top: 0;
+	// 				padding: 17px 20px;
+	// 				font-size: 14px;
+	// 				height: 52px;
+
+	// 				img{
+	// 					width: 18px;
+	// 				}
+	// 				span{
+	// 					display: block;
+	// 				}
+	// 			}
+	// 		}
+	// 	}
+
+	// }
+
+	.select__kaina{
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 16px;
+
+		&:last-child{
+			margin-bottom: 0;
+		}
+
+		label{
+			color: var(--grey);
+			margin-bottom: 10px;
+			font-size: 8px;
+			font-weight: 500;
+		}
+
+		p{
+			color: var(--black);
+			font-size: 16px;
+			font-weight: 600;
+			text-transform: capitalize;
+		}
+
+		select{
+			background: transparent;
+			color: var(--grey-sel);
+			font-size: 16px;
+			font-weight: 600;
+			text-transform: capitalize;
+			margin-left: -4px;
+		}
+		select:hover {
+			cursor: pointer;
+		}
+		select:focus {
+			outline: none;
+			box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+		}
+	}
+} // dorobutu
 
 
 
 
 
-// @media screen and (min-width: 768px)
+
+
+// @media screen and (min-width: 768px);

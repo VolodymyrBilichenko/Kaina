@@ -189,7 +189,9 @@ button {
   padding: 0;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  font-family: "Avenir Next LT Pro"
+  font-family: "AvenirNext LT Pro";
+  font-weight: 700;
+  font-style: normal
 }
 :root {
   --container: 1140px;
@@ -198,7 +200,12 @@ button {
   --body-bgd: #F8F8F8;
   --green-banner: linear-gradient(90deg, #7BBE03 0%, #BCEC0E 100%);
   --green: #159F0A;
-  --green-bgd: rgba(21, 159, 10, 0.10)
+  --green-bgd: rgba(21, 159, 10, 0.10);
+  --grey: #737373;
+  --grey-sel: #353C45;
+  --orange: #FD990A;
+  --orange-hover: #DF8300;
+  --blue: #0F8CD1
 }
 body {
   margin: 0;
@@ -254,7 +261,7 @@ button {
 img {
   display: block;
   width: 100%;
-  height: auto
+  height: 100%
 }
 button,
 input,
@@ -365,7 +372,10 @@ textarea {
   flex-wrap: wrap;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
-  justify-content: center
+  justify-content: center;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start
 }
 .option__list__card {
   display: -webkit-box;
@@ -437,8 +447,23 @@ textarea {
 .shopping .list__href__icon {
   width: 11px
 }
-.shopping .list__item {
+.shopping .item__nemokamas {
   width: 100%
+}
+.shopping .list__item {
+  width: 100%;
+  border-radius: 12px;
+  background: #fff;
+  -webkit-box-shadow: 0 4px 50px 0 rgba(0,0,0,.1);
+  box-shadow: 0 4px 50px 0 rgba(0,0,0,.1);
+  padding: 10px 10px 26px;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+  border-bottom: 3px solid var(--white)
+}
+.shopping .list__item:hover {
+  border-bottom: 3px solid var(--blue)
 }
 .shopping .list__item__type {
   width: 100%;
@@ -496,5 +521,108 @@ textarea {
 .shopping .item__options p {
   color: var(--black);
   font-size: 10px;
-  font-weight: 400
+  font-weight: 600
+}
+.shopping .item__price {
+  margin-top: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px
+}
+.shopping .item__price button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 34px;
+  margin-top: auto;
+  margin-bottom: 10px;
+  padding: 12px;
+  background-color: var(--orange);
+  border-radius: 8px;
+  -webkit-box-shadow: 0 4px 20px 0 rgba(253,153,10,.25);
+  box-shadow: 0 4px 20px 0 rgba(253,153,10,.25);
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+  color: var(--white);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: .3px;
+  width: auto;
+  white-space: nowrap
+}
+.shopping .item__price button:hover {
+  background-color: var(--orange-hover)
+}
+.shopping .item__price button img {
+  width: 10px
+}
+.shopping .item__price button span {
+  display: none;
+  color: var(--white);
+  font-size: 14px;
+  font-weight: 700
+}
+@media screen and (min-width:768px) {
+  .shopping .item__price .item__price {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
+  }
+  .shopping .item__price button {
+    padding: 17px 20px;
+    font-size: 14px;
+    height: 52px
+  }
+  .shopping .item__price button img {
+    width: 18px
+  }
+  .shopping .item__price button span {
+    display: block
+  }
+}
+.shopping .select__kaina {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-bottom: 16px
+}
+.shopping .select__kaina:last-child {
+  margin-bottom: 0
+}
+.shopping .select__kaina label {
+  color: var(--grey);
+  margin-bottom: 10px;
+  font-size: 8px;
+  font-weight: 500
+}
+.shopping .select__kaina p {
+  color: var(--black);
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: capitalize
+}
+.shopping .select__kaina select {
+  background: 0 0;
+  color: var(--grey-sel);
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: capitalize;
+  margin-left: -4px
+}
+.shopping .select__kaina select:hover {
+  cursor: pointer
+}
+.shopping .select__kaina select:focus {
+  outline: 0;
+  -webkit-box-shadow: 0 0 5px rgba(0,123,255,.5);
+  box-shadow: 0 0 5px rgba(0,123,255,.5)
 }
