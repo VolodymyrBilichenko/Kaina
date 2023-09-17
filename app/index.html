@@ -36,11 +36,12 @@
               Roletai <br>diena naktis
             </h1>
             <p class="banner__txt__desc">
-              Ieškote roletų langams?
-              Siūlome rinktis iš populiauriausių pardavėjų.
+              Ieškote žaliuzių langams? <br>
+              Kviečiame rinktis iš populiariausių pardavėjų.
             </p>
           </div>
           <img src="./img/window.png" alt="window photo" class="banner__window">
+          <img src="./img/window.png" alt="window photo" class="banner__window banner__window_d">
         </div>
       </div>
     </section>
@@ -80,6 +81,20 @@
             </a>
           </li>
           <li class="list__item">
+            <div class="sales">
+              <div class="sales__blue">
+                <img src="./img/white-galka.png" alt="galka icon">
+                <p>
+                  GERIAUSIAI ĮVERTINTAS<br> PARDAVĖJAS
+                </p>
+              </div>
+              <div class="sales__orange">
+                <img src="./img/sale.png" alt="sale icon">
+                <p>
+                  ŽEMIAUSIA<br> KAINA
+                </p>
+              </div>
+            </div>
             <div class="list__item__type">
               <img src="./img/shopping-it-1.jpg" alt="item photo" class="list__item__photo">
               <div class="item__nemokamas">
@@ -120,11 +135,13 @@
                     <div class="price__select">
                       <div class="select__kaina">
                         <label for="price">Kaina</label>
-                        <select id="price" name="price">
-                          <option value="29">Nuo 29 eur/kvm</option>
-                          <option value="30">Nuo 30 eur/kvm</option>
-                          <option value="31">Nuo 31 eur/kvm</option>
-                        </select>
+                        <div class="select__kaine_arrow">
+                          <select id="price" name="price">
+                            <option value="2">Nuo 29 eur/kvm</option>
+                            <option value="3">Nuo 30 eur/kvm</option>
+                            <option value="4">Nuo 31 eur/kvm</option>
+                          </select>
+                        </div>
                       </div>
                       <div class="select__kaina">
                         <label for="price">Montavimo kaina</label>
@@ -140,10 +157,464 @@
               <div class="price__select">
                 <div class="select__kaina">
                   <label for="price">Kaina</label>
-                  <select id="price" name="price">
-                    <option value="29">Nuo 29 eur/kvm</option>
-                    <option value="30">Nuo 30 eur/kvm</option>
-                    <option value="31">Nuo 31 eur/kvm</option>
+                  <select id="price" name="price" class="select-f">
+                    <div slot="listbox">
+                      <div popup behavior="listbox">
+                        <option value="29">Nuo 29 eur/kvm</option>
+                        <option value="30">Nuo 30 eur/kvm</option>
+                        <option value="31">Nuo 31 eur/kvm</option>
+                      </div>
+                    </div>
+                  </select>
+                </div>
+                <div class="select__kaina">
+                  <label for="price">Montavimo kaina</label>
+                  <p>8 eur/vnt</p>
+                </div>
+              </div>
+              <button type="button">Apsilankyti <img src="./img/right-arrow.svg" alt="arrow icon"></button>
+            </div>
+          </li>
+          <li class="list__item">
+            <div class="list__item__type">
+              <img src="./img/shopping-it-2.jpg" alt="item photo" class="list__item__photo">
+              <div class="item__nemokamas">
+                <div class="item__options__price">
+                  <ul class="item__options">
+                    <li>
+                      <img src="./img/galka.svg" alt="galka icon">
+                      <p>
+                        Akcijos
+                      </p>
+                    </li>
+                    <li>
+                      <img src="./img/galka.svg" alt="galka icon">
+                      <p>
+                        24 mėnesių garantija
+                      </p>
+                    </li>
+                    <li>
+                      <img src="./img/galka.svg" alt="galka icon">
+                      <p>
+                        Virš 8000 audinių pasirinkimas
+                      </p>
+                    </li>
+                    <li>
+                      <img src="./img/galka.svg" alt="galka icon">
+                      <p>
+                        Daugiau nei 7500+ įgyvendintų projektų
+                      </p>
+                    </li>
+                  </ul>
+                  <div class="item__price">
+                    <div class="price__select">
+                      <div class="select__kaina">
+                        <label for="price">Kaina</label>
+                        <div class="select__kaine_arrow">
+                          <select id="price" name="price">
+                            <option value="2">Nuo 29 eur/kvm</option>
+                            <option value="3">Nuo 30 eur/kvm</option>
+                            <option value="4">Nuo 31 eur/kvm</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="select__kaina">
+                        <label for="price">Montavimo kaina</label>
+                        <p>8 eur/vnt</p>
+                      </div>
+                    </div>
+                    <button type="button">Apsilankyti svetaineje <img src="./img/right-arrow.svg" alt="arrow icon"></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item__price">
+              <div class="price__select">
+                <div class="select__kaina">
+                  <label for="price">Kaina</label>
+                  <select id="price" name="price" class="select-f">
+                    <div slot="listbox">
+                      <div popup behavior="listbox">
+                        <option value="29">Nuo 29 eur/kvm</option>
+                        <option value="30">Nuo 30 eur/kvm</option>
+                        <option value="31">Nuo 31 eur/kvm</option>
+                      </div>
+                    </div>
+                  </select>
+                </div>
+                <div class="select__kaina">
+                  <label for="price">Montavimo kaina</label>
+                  <p>8 eur/vnt</p>
+                </div>
+              </div>
+              <button type="button">Apsilankyti <img src="./img/right-arrow.svg" alt="arrow icon"></button>
+            </div>
+          </li>
+          <li class="list__item">
+            <div class="list__item__type">
+              <img src="./img/shopping-it-3.jpg" alt="item photo" class="list__item__photo">
+              <div class="item__nemokamas">                
+                <div class="item__options__price">
+                  <ul class="item__options">
+                    <li>
+                      <img src="./img/galka.svg" alt="galka icon">
+                      <p>
+                        Akcijos
+                      </p>
+                    </li>
+                    <li>
+                      <img src="./img/galka.svg" alt="galka icon">
+                      <p>
+                        24 mėnesių garantija
+                      </p>
+                    </li>
+                    <li>
+                      <img src="./img/galka.svg" alt="galka icon">
+                      <p>
+                        Virš 8000 audinių pasirinkimas
+                      </p>
+                    </li>
+                    <li>
+                      <img src="./img/galka.svg" alt="galka icon">
+                      <p>
+                        Daugiau nei 7500+ įgyvendintų projektų
+                      </p>
+                    </li>
+                  </ul>
+                  <div class="item__price">
+                    <div class="price__select">
+                      <div class="select__kaina">
+                        <label for="price">Kaina</label>
+                        <div class="select__kaine_arrow">
+                          <select id="price" name="price">
+                            <option value="2">Nuo 29 eur/kvm</option>
+                            <option value="3">Nuo 30 eur/kvm</option>
+                            <option value="4">Nuo 31 eur/kvm</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="select__kaina">
+                        <label for="price">Montavimo kaina</label>
+                        <p>8 eur/vnt</p>
+                      </div>
+                    </div>
+                    <button type="button">Apsilankyti svetaineje <img src="./img/right-arrow.svg" alt="arrow icon"></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item__price">
+              <div class="price__select">
+                <div class="select__kaina">
+                  <label for="price">Kaina</label>
+                  <select id="price" name="price" class="select-f">
+                    <div slot="listbox">
+                      <div popup behavior="listbox">
+                        <option value="29">Nuo 29 eur/kvm</option>
+                        <option value="30">Nuo 30 eur/kvm</option>
+                        <option value="31">Nuo 31 eur/kvm</option>
+                      </div>
+                    </div>
+                  </select>
+                </div>
+                <div class="select__kaina">
+                  <label for="price">Montavimo kaina</label>
+                  <p>8 eur/vnt</p>
+                </div>
+              </div>
+              <button type="button">Apsilankyti <img src="./img/right-arrow.svg" alt="arrow icon"></button>
+            </div>
+          </li>
+          <li class="list__item">
+            <div class="list__item__type">
+              <img src="./img/shopping-it-4.jpg" alt="item photo" class="list__item__photo">
+              <div class="item__nemokamas">                
+                <div class="item__options__price">
+                  <ul class="item__options">
+                    <li>
+                      <img src="./img/galka.svg" alt="galka icon">
+                      <p>
+                        Akcijos
+                      </p>
+                    </li>
+                    <li>
+                      <img src="./img/galka.svg" alt="galka icon">
+                      <p>
+                        24 mėnesių garantija
+                      </p>
+                    </li>
+                    <li>
+                      <img src="./img/galka.svg" alt="galka icon">
+                      <p>
+                        Virš 8000 audinių pasirinkimas
+                      </p>
+                    </li>
+                    <li>
+                      <img src="./img/galka.svg" alt="galka icon">
+                      <p>
+                        Daugiau nei 7500+ įgyvendintų projektų
+                      </p>
+                    </li>
+                  </ul>
+                  <div class="item__price">
+                    <div class="price__select">
+                      <div class="select__kaina">
+                        <label for="price">Kaina</label>
+                        <div class="select__kaine_arrow">
+                          <select id="price" name="price">
+                            <option value="2">Nuo 29 eur/kvm</option>
+                            <option value="3">Nuo 30 eur/kvm</option>
+                            <option value="4">Nuo 31 eur/kvm</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="select__kaina">
+                        <label for="price">Montavimo kaina</label>
+                        <p>8 eur/vnt</p>
+                      </div>
+                    </div>
+                    <button type="button">Apsilankyti svetaineje <img src="./img/right-arrow.svg" alt="arrow icon"></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item__price">
+              <div class="price__select">
+                <div class="select__kaina">
+                  <label for="price">Kaina</label>
+                  <select id="price" name="price" class="select-f">
+                    <div slot="listbox">
+                      <div popup behavior="listbox">
+                        <option value="29">Nuo 29 eur/kvm</option>
+                        <option value="30">Nuo 30 eur/kvm</option>
+                        <option value="31">Nuo 31 eur/kvm</option>
+                      </div>
+                    </div>
+                  </select>
+                </div>
+                <div class="select__kaina">
+                  <label for="price">Montavimo kaina</label>
+                  <p>8 eur/vnt</p>
+                </div>
+              </div>
+              <button type="button">Apsilankyti <img src="./img/right-arrow.svg" alt="arrow icon"></button>
+            </div>
+          </li>
+          <li class="list__item">
+            <div class="list__item__type">
+              <img src="./img/shopping-it-5.jpg" alt="item photo" class="list__item__photo">
+              <div class="item__nemokamas">                
+                <div class="item__options__price">
+                  <ul class="item__options">
+                    <li>
+                      <img src="./img/galka.svg" alt="galka icon">
+                      <p>
+                        Akcijos
+                      </p>
+                    </li>
+                    <li>
+                      <img src="./img/galka.svg" alt="galka icon">
+                      <p>
+                        24 mėnesių garantija
+                      </p>
+                    </li>
+                    <li>
+                      <img src="./img/galka.svg" alt="galka icon">
+                      <p>
+                        Virš 8000 audinių pasirinkimas
+                      </p>
+                    </li>
+                    <li>
+                      <img src="./img/galka.svg" alt="galka icon">
+                      <p>
+                        Daugiau nei 7500+ įgyvendintų projektų
+                      </p>
+                    </li>
+                  </ul>
+                  <div class="item__price">
+                    <div class="price__select">
+                      <div class="select__kaina">
+                        <label for="price">Kaina</label>
+                        <div class="select__kaine_arrow">
+                          <select id="price" name="price">
+                            <option value="2">Nuo 29 eur/kvm</option>
+                            <option value="3">Nuo 30 eur/kvm</option>
+                            <option value="4">Nuo 31 eur/kvm</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="select__kaina">
+                        <label for="price">Montavimo kaina</label>
+                        <p>8 eur/vnt</p>
+                      </div>
+                    </div>
+                    <button type="button">Apsilankyti svetaineje <img src="./img/right-arrow.svg" alt="arrow icon"></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item__price">
+              <div class="price__select">
+                <div class="select__kaina">
+                  <label for="price">Kaina</label>
+                  <select id="price" name="price" class="select-f">
+                    <div slot="listbox">
+                      <div popup behavior="listbox">
+                        <option value="29">Nuo 29 eur/kvm</option>
+                        <option value="30">Nuo 30 eur/kvm</option>
+                        <option value="31">Nuo 31 eur/kvm</option>
+                      </div>
+                    </div>
+                  </select>
+                </div>
+                <div class="select__kaina">
+                  <label for="price">Montavimo kaina</label>
+                  <p>8 eur/vnt</p>
+                </div>
+              </div>
+              <button type="button">Apsilankyti <img src="./img/right-arrow.svg" alt="arrow icon"></button>
+            </div>
+          </li>
+          <li class="list__item">
+            <div class="list__item__type">
+              <img src="./img/shopping-it-6.jpg" alt="item photo" class="list__item__photo">
+              <div class="item__nemokamas">                
+                <div class="item__options__price">
+                  <ul class="item__options">
+                    <li>
+                      <img src="./img/galka.svg" alt="galka icon">
+                      <p>
+                        Akcijos
+                      </p>
+                    </li>
+                    <li>
+                      <img src="./img/galka.svg" alt="galka icon">
+                      <p>
+                        24 mėnesių garantija
+                      </p>
+                    </li>
+                    <li>
+                      <img src="./img/galka.svg" alt="galka icon">
+                      <p>
+                        Virš 8000 audinių pasirinkimas
+                      </p>
+                    </li>
+                    <li>
+                      <img src="./img/galka.svg" alt="galka icon">
+                      <p>
+                        Daugiau nei 7500+ įgyvendintų projektų
+                      </p>
+                    </li>
+                  </ul>
+                  <div class="item__price">
+                    <div class="price__select">
+                      <div class="select__kaina">
+                        <label for="price">Kaina</label>
+                        <div class="select__kaine_arrow">
+                          <select id="price" name="price">
+                            <option value="2">Nuo 29 eur/kvm</option>
+                            <option value="3">Nuo 30 eur/kvm</option>
+                            <option value="4">Nuo 31 eur/kvm</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="select__kaina">
+                        <label for="price">Montavimo kaina</label>
+                        <p>8 eur/vnt</p>
+                      </div>
+                    </div>
+                    <button type="button">Apsilankyti svetaineje <img src="./img/right-arrow.svg" alt="arrow icon"></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item__price">
+              <div class="price__select">
+                <div class="select__kaina">
+                  <label for="price">Kaina</label>
+                  <select id="price" name="price" class="select-f">
+                    <div slot="listbox">
+                      <div popup behavior="listbox">
+                        <option value="29">Nuo 29 eur/kvm</option>
+                        <option value="30">Nuo 30 eur/kvm</option>
+                        <option value="31">Nuo 31 eur/kvm</option>
+                      </div>
+                    </div>
+                  </select>
+                </div>
+                <div class="select__kaina">
+                  <label for="price">Montavimo kaina</label>
+                  <p>8 eur/vnt</p>
+                </div>
+              </div>
+              <button type="button">Apsilankyti <img src="./img/right-arrow.svg" alt="arrow icon"></button>
+            </div>
+          </li>
+          <li class="list__item">
+            <div class="list__item__type">
+              <img src="./img/shopping-it-7.jpg" alt="item photo" class="list__item__photo">
+              <div class="item__nemokamas">                
+                <div class="item__options__price">
+                  <ul class="item__options">
+                    <li>
+                      <img src="./img/galka.svg" alt="galka icon">
+                      <p>
+                        Akcijos
+                      </p>
+                    </li>
+                    <li>
+                      <img src="./img/galka.svg" alt="galka icon">
+                      <p>
+                        24 mėnesių garantija
+                      </p>
+                    </li>
+                    <li>
+                      <img src="./img/galka.svg" alt="galka icon">
+                      <p>
+                        Virš 8000 audinių pasirinkimas
+                      </p>
+                    </li>
+                    <li>
+                      <img src="./img/galka.svg" alt="galka icon">
+                      <p>
+                        Daugiau nei 7500+ įgyvendintų projektų
+                      </p>
+                    </li>
+                  </ul>
+                  <div class="item__price">
+                    <div class="price__select">
+                      <div class="select__kaina">
+                        <label for="price">Kaina</label>
+                        <div class="select__kaine_arrow">
+                          <select id="price" name="price">
+                            <option value="2">Nuo 29 eur/kvm</option>
+                            <option value="3">Nuo 30 eur/kvm</option>
+                            <option value="4">Nuo 31 eur/kvm</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="select__kaina">
+                        <label for="price">Montavimo kaina</label>
+                        <p>8 eur/vnt</p>
+                      </div>
+                    </div>
+                    <button type="button">Apsilankyti svetaineje <img src="./img/right-arrow.svg" alt="arrow icon"></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item__price">
+              <div class="price__select">
+                <div class="select__kaina">
+                  <label for="price">Kaina</label>
+                  <select id="price" name="price" class="select-f">
+                    <div slot="listbox">
+                      <div popup behavior="listbox">
+                        <option value="29">Nuo 29 eur/kvm</option>
+                        <option value="30">Nuo 30 eur/kvm</option>
+                        <option value="31">Nuo 31 eur/kvm</option>
+                      </div>
+                    </div>
                   </select>
                 </div>
                 <div class="select__kaina">
@@ -273,7 +744,43 @@
   </main>
 
   <footer class="footer">
-
+    <div class="container">
+      <div class="footer__inner">
+        <div class="inner__dt">
+          <ul>
+            <li>
+              <a href="#">Pradžia</a>
+            </li>
+            <li>
+              <a href="#">Apie mus</a>
+            </li>
+            <li>
+              <a href="#">Atsiliepimai</a>
+            </li>
+            <li>
+              <a class="border_n" href="#">Susisiekite</a>
+            </li>
+          </ul>
+          <div class="footer__mail">
+            <span>
+              <img src="./img/mail.svg" alt="mail icon">
+              El. paštas:
+            </span>
+            <a href="mailto:info@kaina123.lt">info@kaina123.lt</a>
+          </div>
+        </div>
+        <div class="footer__mail">
+          <span>
+            <img src="./img/mail.svg" alt="mail icon">
+            El. paštas:
+          </span>
+          <a href="mailto:info@kaina123.lt">info@kaina123.lt</a>
+        </div>
+      </div>
+      <p class="footer__copir">
+        © 2023 KAINA123 - Visos teisės saugomos
+      </p>
+    </div>
   </footer>
 
 
