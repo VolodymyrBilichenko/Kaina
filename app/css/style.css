@@ -969,7 +969,7 @@ textarea {
     height: 53px;
     width: 53px
   }
-  .rating P {
+  .rating .rating-value P {
     font-size: 20px
   }
 }
