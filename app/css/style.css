@@ -857,20 +857,20 @@ textarea {
 }
 .rating {
   position: absolute;
-  top: -20px;
-  left: -30px;
+  top: -15px;
+  left: -20px;
   z-index: 10
 }
 .rating .rating-container {
-  width: 74px;
-  height: 74px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   background-color: var(--white);
   position: relative
 }
 .rating .rating-gray {
-  width: 62px;
-  height: 62px;
+  width: 45px;
+  height: 45px;
   border-radius: 50%;
   position: absolute;
   top: 50%;
@@ -881,8 +881,8 @@ textarea {
   background: #ccc
 }
 .rating .rating-circle {
-  width: 62px;
-  height: 62px;
+  width: 45px;
+  height: 45px;
   border-radius: 50%;
   background: conic-gradient(#52b405 0 100%,transparent 100% 100%);
   position: absolute;
@@ -896,8 +896,8 @@ textarea {
   position: absolute;
   top: 50%;
   left: 50%;
-  height: 53px;
-  width: 53px;
+  height: 39px;
+  width: 39px;
   background-color: var(--white);
   border-radius: 50%;
   -webkit-transform: translate(-50%,-50%);
@@ -911,7 +911,7 @@ textarea {
   -webkit-transform: translate(-50%,-50%);
   -ms-transform: translate(-50%,-50%);
   transform: translate(-50%,-50%);
-  font-size: 20px;
+  font-size: 12px;
   font-weight: 700;
   color: #000
 }
@@ -947,6 +947,31 @@ textarea {
 }
 .rating .rating-circle.red {
   background: conic-gradient(#f44336 0 100%,transparent 100% 100%)
+}
+@media screen and (min-width:768px) {
+  .rating {
+    top: -20px;
+    left: -30px
+  }
+  .rating .rating-container {
+    width: 74px;
+    height: 74px
+  }
+  .rating .rating-gray {
+    width: 62px;
+    height: 62px
+  }
+  .rating .rating-circle {
+    width: 62px;
+    height: 62px
+  }
+  .rating .rating-value {
+    height: 53px;
+    width: 53px
+  }
+  .rating P {
+    font-size: 20px
+  }
 }
 .description {
   padding-bottom: 30px
