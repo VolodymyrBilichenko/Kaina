@@ -410,9 +410,9 @@ textarea {
   gap: 20px 20px;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: flex-start
@@ -662,7 +662,6 @@ textarea {
   font-size: 16px;
   font-weight: 600;
   text-transform: capitalize;
-  margin-left: -4px;
   -moz-appearance: none;
   -webkit-appearance: none;
   appearance: none;
@@ -678,12 +677,12 @@ textarea {
   position: absolute;
   display: block;
   top: 50%;
-  right: -25px;
+  right: -10px;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-  width: 17px;
-  height: 17px;
+  width: 9px;
+  height: 9px;
   pointer-events: none;
   background-image: url(../img/arrow-down.svg);
   background-size: cover;
@@ -822,6 +821,11 @@ textarea {
   }
   .shopping .select__kaina p {
     font-size: 18px
+  }
+  .shopping .select__kaina .select__kaine_arrow::before {
+    width: 17px;
+    height: 17px;
+    right: -20px
   }
   .shopping .sales__blue {
     max-width: 400px

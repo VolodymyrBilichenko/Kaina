@@ -250,7 +250,7 @@ select {
 		display: flex;
 		gap: 20px 20px;
 		flex-wrap: wrap;
-		justify-content: center;
+		justify-content: space-between;
 		align-items: flex-start;
 
 		&__card{
@@ -501,7 +501,6 @@ select {
 			font-size: 16px;
 			font-weight: 600;
 			text-transform: capitalize;
-			margin-left: -4px;
 			-moz-appearance: none;
 			-webkit-appearance: none;
 			appearance: none;
@@ -519,10 +518,10 @@ select {
 			position: absolute;
 			display: block;
 			top: 50%;
-			right: -25px;
+			right: -10px;
 			transform: translateY(-50%);
-			width: 17px;
-			height: 17px;
+			width: 9px;
+			height: 9px;
 			pointer-events: none;
 			background-image: url('../img/arrow-down.svg');
 			background-size: cover;
@@ -674,7 +673,13 @@ select {
 			p{
 				font-size: 18px;
 			}
+			.select__kaine_arrow::before {
+				width: 17px;
+				height: 17px;
+				right: -20px;
+			}
 		}
+
 
 
 		.sales{
