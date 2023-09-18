@@ -1246,8 +1246,7 @@ textarea {
   padding-right: 15px
 }
 .footer li a:hover {
-  color: var(--black);
-  font-weight: 600
+  color: var(--black)
 }
 .footer li .border_n {
   border-right: none;
