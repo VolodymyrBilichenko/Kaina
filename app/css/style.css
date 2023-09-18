@@ -288,10 +288,10 @@ textarea {
   overflow: hidden
 }
 .header {
-  padding: 16px 15px;
   background-color: var(--white)
 }
 .header__inner {
+  padding: 16px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
