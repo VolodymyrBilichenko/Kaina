@@ -570,8 +570,8 @@ textarea {
   display: -ms-flexbox;
   display: flex
 }
-.shopping .item__options ul {
-  margin-top: -7px
+.shopping .item__options {
+  margin-top: 7px
 }
 .shopping .item__options li {
   display: -webkit-box;
@@ -595,6 +595,9 @@ textarea {
   font-size: 10px;
   font-weight: 600;
   letter-spacing: normal
+}
+.shopping .item__options_mar {
+  margin-top: 0
 }
 .shopping .item__price {
   margin-top: 15px;

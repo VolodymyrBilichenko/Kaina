@@ -422,9 +422,7 @@ select {
 	}
 
 	.item__options {
-		ul{
-			margin-top: -7px;
-		}
+			margin-top: 7px;
 		li{
 			display: flex;
 			margin-bottom: 5px;
@@ -446,6 +444,9 @@ select {
 			font-weight: 600;
 			letter-spacing: normal;
 		}
+	}
+	.item__options_mar{
+		margin-top: 0;
 	}
 
 	.item__price{
