@@ -627,6 +627,10 @@ select {
 			display: none;
 		}
 
+		.item__options{
+			margin-top: 0;
+		}
+
 		.item__options__price{
 			.item__price{
 				display: flex;

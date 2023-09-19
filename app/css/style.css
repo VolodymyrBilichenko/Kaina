@@ -789,6 +789,9 @@ textarea {
   .shopping .item__price {
     display: none
   }
+  .shopping .item__options {
+    margin-top: 0
+  }
   .shopping .item__options__price .item__price {
     display: -webkit-box;
     display: -ms-flexbox;
