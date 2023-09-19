@@ -331,7 +331,7 @@ textarea {
   }
 }
 .banner {
-  padding: 20px 0
+  padding: 20px 0 22px
 }
 .banner__inner {
   background: var(--green-banner);
@@ -344,9 +344,9 @@ textarea {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  padding: 10px 19px 0 19px;
+  padding: 6px 19px 0 19px;
   border-radius: 12px;
-  gap: 10px;
+  gap: 13px;
   overflow: hidden
 }
 .banner__txt {
@@ -358,7 +358,7 @@ textarea {
   font-size: 20px;
   font-weight: 700;
   text-transform: uppercase;
-  margin-bottom: 10px
+  margin-top: -7px
 }
 .banner__txt__desc {
   color: var(--white);
@@ -366,6 +366,7 @@ textarea {
   font-size: 12px
 }
 .banner__window {
+  margin-top: -3px;
   max-width: 87px;
   -webkit-filter: drop-shadow(0 4px 4px rgba(0, 0, 0, .25));
   filter: drop-shadow(0 4px 4px rgba(0, 0, 0, .25))
@@ -401,18 +402,14 @@ textarea {
   }
 }
 .option {
-  padding-bottom: 30px
+  padding-bottom: 26px
 }
 .option__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 20px 20px;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
   -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: flex-start
@@ -422,6 +419,12 @@ textarea {
   display: -ms-flexbox;
   display: flex;
   gap: 5px
+}
+.option__list__card_mar {
+  margin-left: 32px
+}
+.option__list__card_top {
+  margin-top: 13px
 }
 .option__list__icon {
   width: 24px
@@ -466,13 +469,13 @@ textarea {
   }
 }
 .shopping {
-  padding-bottom: 30px
+  padding-bottom: 22px
 }
 .shopping__list {
   width: 100%
 }
 .shopping .list__href {
-  margin-bottom: 45px
+  margin-bottom: 42px
 }
 .shopping .list__href__info {
   display: -webkit-box;
@@ -500,7 +503,7 @@ textarea {
   background: #fff;
   -webkit-box-shadow: 0 4px 50px 0 rgba(0,0,0,.1);
   box-shadow: 0 4px 50px 0 rgba(0,0,0,.1);
-  padding: 10px 10px 26px;
+  padding: 10px 10px 19px;
   -webkit-transition: all .3s ease;
   -o-transition: all .3s ease;
   transition: all .3s ease;
@@ -519,7 +522,10 @@ textarea {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 5px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 7px;
   position: relative
 }
 .shopping .list__item__photo {
@@ -540,7 +546,7 @@ textarea {
   border-radius: 8px;
   width: 100%;
   max-width: 660px;
-  margin-bottom: 7px
+  margin-bottom: 5px
 }
 .shopping .delivery__photo {
   width: 8px;
@@ -551,11 +557,14 @@ textarea {
   font-size: 8px;
   font-weight: 600
 }
+.shopping .item__options ul {
+  margin-top: -7px
+}
 .shopping .item__options li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: flex-start
@@ -571,7 +580,8 @@ textarea {
 .shopping .item__options p {
   color: var(--black);
   font-size: 10px;
-  font-weight: 600
+  font-weight: 600;
+  letter-spacing: normal
 }
 .shopping .item__price {
   margin-top: 15px;
@@ -579,6 +589,9 @@ textarea {
   display: -ms-flexbox;
   display: flex;
   gap: 10px
+}
+.shopping .item__price .price__select {
+  margin-left: 4px
 }
 .shopping .item__price button {
   display: -webkit-box;
@@ -589,9 +602,10 @@ textarea {
   align-items: center;
   height: 34px;
   margin-top: auto;
-  margin-bottom: 10px;
+  margin-bottom: 4px;
+  margin-right: 8px;
   margin-left: auto;
-  padding: 12px;
+  padding: 12px 13px;
   background-color: var(--orange);
   border-radius: 8px;
   -webkit-box-shadow: 0 4px 20px 0 rgba(253,153,10,.25);
@@ -638,7 +652,7 @@ textarea {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  margin-bottom: 16px;
+  margin-bottom: 10px;
   position: relative
 }
 .shopping .select__kaina:last-child {
@@ -646,7 +660,7 @@ textarea {
 }
 .shopping .select__kaina label {
   color: var(--grey);
-  margin-bottom: 10px;
+  margin-bottom: 4px;
   font-size: 8px;
   font-weight: 500
 }
@@ -719,13 +733,16 @@ textarea {
 .shopping .sales__blue img {
   max-width: 8px;
   margin-right: 5px;
-  height: 8px
+  height: 8px;
+  margin-left: 12px;
+  margin-top: 2px
 }
 .shopping .sales p {
   color: var(--white);
   font-size: 8px;
   font-weight: 600;
-  text-transform: uppercase
+  text-transform: uppercase;
+  margin-top: 2px
 }
 .shopping .sales__orange {
   display: -webkit-box;
@@ -746,7 +763,8 @@ textarea {
   max-width: 8px;
   margin-right: 5px;
   height: 8px;
-  margin-left: 160px
+  margin-left: 167px;
+  margin-top: 2px
 }
 @media screen and (min-width:768px) {
   .shopping {
@@ -864,8 +882,8 @@ textarea {
 }
 .rating {
   position: absolute;
-  top: -15px;
-  left: -20px;
+  top: -20px;
+  left: -21px;
   z-index: 10
 }
 .rating .rating-container {
@@ -876,8 +894,8 @@ textarea {
   position: relative
 }
 .rating .rating-gray {
-  width: 45px;
-  height: 45px;
+  width: 42px;
+  height: 42px;
   border-radius: 50%;
   position: absolute;
   top: 50%;
@@ -888,8 +906,8 @@ textarea {
   background: #ccc
 }
 .rating .rating-circle {
-  width: 45px;
-  height: 45px;
+  width: 42px;
+  height: 42px;
   border-radius: 50%;
   background: conic-gradient(#52b405 0 100%,transparent 100% 100%);
   position: absolute;
@@ -903,8 +921,8 @@ textarea {
   position: absolute;
   top: 50%;
   left: 50%;
-  height: 39px;
-  width: 39px;
+  height: 35px;
+  width: 35px;
   background-color: var(--white);
   border-radius: 50%;
   -webkit-transform: translate(-50%,-50%);
@@ -981,11 +999,11 @@ textarea {
   }
 }
 .description {
-  padding-bottom: 30px
+  padding-bottom: 23px
 }
 .description__txt {
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 26px;
   width: 100%;
   max-width: 635px
 }
@@ -993,12 +1011,12 @@ textarea {
   color: var(--black);
   font-size: 18px;
   font-weight: 700;
-  margin-bottom: 20px
+  margin-bottom: 12px
 }
 .description__txt p {
   color: var(--black);
   font-size: 12px;
-  margin-bottom: 15px
+  margin-bottom: 12px
 }
 .description__txt p:last-child {
   margin-bottom: 0
@@ -1014,7 +1032,7 @@ textarea {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 25px
+  margin-bottom: 22px
 }
 .description__option li:last-child {
   margin-bottom: 0
@@ -1067,14 +1085,14 @@ textarea {
   }
 }
 .comment {
-  padding-bottom: 60px
+  padding-bottom: 55px
 }
 .comment h2 {
   text-align: center;
   color: var(--black);
   font-size: 18px;
   font-weight: 700;
-  margin-bottom: 20px
+  margin-bottom: 17px
 }
 .comment__wrapper {
   display: -webkit-box;
@@ -1099,13 +1117,14 @@ textarea {
 .comment__card img {
   max-width: 16px;
   height: 16px;
-  margin-bottom: 14px
+  margin-bottom: 10px
 }
 .comment__card p {
   color: var(--black);
   font-size: 12px;
   font-weight: 600;
-  margin-bottom: 17px
+  margin-bottom: 17px;
+  letter-spacing: 0
 }
 .comment .card__people {
   display: -webkit-box;
@@ -1128,7 +1147,7 @@ textarea {
   color: var(--black);
   font-size: 12px;
   font-weight: 700;
-  margin-bottom: 5px
+  margin-bottom: 1px
 }
 .comment .card__people p {
   color: var(--black);
@@ -1138,7 +1157,7 @@ textarea {
   margin-bottom: 0
 }
 .comment .swiper {
-  padding-bottom: 30px;
+  padding-bottom: 17px;
   margin-bottom: -30px
 }
 .comment .swiper-slide {
@@ -1210,7 +1229,7 @@ textarea {
   }
 }
 .footer {
-  padding: 13px 0 16px;
+  padding: 8px 0 16px;
   background: var(--footer-bgd)
 }
 .footer ul {
@@ -1220,7 +1239,7 @@ textarea {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   width: 100%;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
@@ -1259,8 +1278,8 @@ textarea {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin-bottom: 15px;
-  padding-bottom: 15px;
+  margin-bottom: 12px;
+  padding-bottom: 11px;
   border-bottom: 1px solid rgba(0,0,0,.05);
   -webkit-box-pack: center;
   -ms-flex-pack: center;

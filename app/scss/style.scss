@@ -169,16 +169,16 @@ select {
 }
 
 .banner{
-	padding: 20px 0;
+	padding: 20px 0 22px;
 
 	&__inner{
 		background: var(--green-banner);
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-		padding: 10px 19px 0 19px;
+		padding: 6px 19px 0 19px;
 		border-radius: 12px;
-		gap: 10px;
+		gap: 13px;
 		overflow: hidden;
 	}
 
@@ -191,7 +191,7 @@ select {
 			font-size: 20px;
 			font-weight: 700;
 			text-transform: uppercase;
-			margin-bottom: 10px;
+			margin-top: -7px;
 		}
 
 		&__desc{
@@ -202,6 +202,7 @@ select {
 	}
 
 	&__window{
+		margin-top: -3px;
 		max-width: 87px;
 		filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 	}
@@ -244,18 +245,25 @@ select {
 }
 
 .option{
-	padding-bottom: 30px;
+	padding-bottom: 26px;
 
 	&__list{
 		display: flex;
-		gap: 20px 20px;
 		flex-wrap: wrap;
-		justify-content: space-between;
+		// justify-content: space-between;
 		align-items: flex-start;
 
 		&__card{
 			display: flex;
 			gap: 5px;
+		}
+
+		&__card_mar{
+			margin-left: 32px;
+		}
+
+		&__card_top{
+			margin-top: 13px;
 		}
 
 		&__icon{
@@ -311,14 +319,14 @@ select {
 }
 
 .shopping{
-	padding-bottom: 30px;
+	padding-bottom: 22px;
 
 	&__list{
 		width: 100%;
 	}
 
 	.list__href{
-		margin-bottom: 45px;
+		margin-bottom: 42px;
 		&__info{
 			display: flex;
 			align-items: center;
@@ -343,7 +351,7 @@ select {
 		border-radius: 12px;
 		background: #FFF;
 		box-shadow: 0px 4px 50px 0px rgba(0, 0, 0, 0.10);
-		padding: 10px 10px 26px;
+		padding: 10px 10px 19px;
 		transition: all 0.3s ease;
 		border-bottom: 3px solid var(--white);
 		margin-bottom: 16px;
@@ -360,7 +368,8 @@ select {
 		&__type{
 			width: 100%;
 			display: flex;
-			gap: 5px;
+			align-items: center;
+			gap: 7px;
 			position: relative;
 		}
 
@@ -382,7 +391,7 @@ select {
 		border-radius: 8px;
 		width: 100%;
 		max-width: 660px;
-		margin-bottom: 7px;
+		margin-bottom: 5px;
 
 		&__photo{
 			width: 8px;
@@ -397,9 +406,12 @@ select {
 	}
 
 	.item__options {
+		ul{
+			margin-top: -7px;
+		}
 		li{
 			display: flex;
-			margin-bottom: 10px;
+			margin-bottom: 5px;
 			align-items: flex-start;
 			&:last-child{
 				margin-bottom: 0;
@@ -416,6 +428,7 @@ select {
 			color: var(--black);
 			font-size: 10px;
 			font-weight: 600;
+			letter-spacing: normal;
 		}
 	}
 
@@ -424,14 +437,19 @@ select {
 		display: flex;
 		gap: 10px;
 
+		.price__select{
+			margin-left: 4px;
+		}
+
 		button{
 			display: flex;
 			align-items: center;
 			height: 34px;
 			margin-top: auto;
-			margin-bottom: 10px;
+			margin-bottom: 4px;
+			margin-right: 8px;
 			margin-left: auto;
-			padding: 12px;
+			padding: 12px 13px;
 			background-color: var(--orange);
 			border-radius: 8px;
 			box-shadow: 0px 4px 20px 0px rgba(253, 153, 10, 0.25);
@@ -474,7 +492,7 @@ select {
 	.select__kaina{
 		display: flex;
 		flex-direction: column;
-		margin-bottom: 16px;
+		margin-bottom: 10px;
 		position: relative;
 
 		&:last-child{
@@ -483,7 +501,7 @@ select {
 
 		label{
 			color: var(--grey);
-			margin-bottom: 10px;
+			margin-bottom: 4px;
 			font-size: 8px;
 			font-weight: 500;
 		}
@@ -552,6 +570,8 @@ select {
 				max-width: 8px;
 				margin-right: 5px;
 				height: 8px;
+				margin-left: 12px;
+				margin-top: 2px;
 			}
 		}
 		p{
@@ -559,6 +579,7 @@ select {
 			font-size: 8px;
 			font-weight: 600;
 			text-transform: uppercase;
+			margin-top: 2px;
 		}
 		&__orange{
 			display: flex;
@@ -574,7 +595,8 @@ select {
 				max-width: 8px;
 				margin-right: 5px;
 				height: 8px;
-				margin-left: 160px;
+				margin-left: 167px;
+				margin-top: 2px;
 			}
 		}
 
@@ -679,9 +701,6 @@ select {
 				right: -20px;
 			}
 		}
-
-
-
 		.sales{
 
 			&__blue{
@@ -729,8 +748,8 @@ select {
 
 .rating {
 	position: absolute;
-	top: -15px;
-	left: -20px;
+	top: -20px;
+	left: -21px;
 	z-index: 10;
 
 	.rating-container {
@@ -742,8 +761,8 @@ select {
 	}
 
 	.rating-gray {
-		width: 45px;
-		height: 45px;
+		width: 42px;
+		height: 42px;
 		border-radius: 50%;
 		position: absolute;
 		top: 50%;
@@ -753,8 +772,8 @@ select {
 	}
 
 	.rating-circle {
-		width: 45px;
-		height: 45px;
+		width: 42px;
+		height: 42px;
 		border-radius: 50%;
 		background: conic-gradient(#52B405 0% 100%, transparent 100% 100%);
 		position: absolute;
@@ -767,8 +786,8 @@ select {
 		position: absolute;
 		top: 50%;
 		left: 50%;
-		height: 39px;
-		width: 39px;
+		height: 35px;
+		width: 35px;
 		background-color: var(--white);
 		border-radius: 50%;
 		transform: translate(-50%, -50%);
@@ -857,11 +876,11 @@ select {
 }
 
 .description{
-	padding-bottom: 30px;
+	padding-bottom: 23px;
 
 	&__txt{
 		text-align: center;
-		margin-bottom: 30px;
+		margin-bottom: 26px;
 		width: 100%;
 		max-width: 635px;
 
@@ -869,12 +888,12 @@ select {
 			color: var(--black);
 			font-size: 18px;
 			font-weight: 700;
-			margin-bottom: 20px;
+			margin-bottom: 12px;
 		}
 		p{
 			color: var(--black);
 			font-size: 12px;
-			margin-bottom: 15px;
+			margin-bottom: 12px;
 			&:last-child{
 				margin-bottom: 0;
 			}
@@ -890,7 +909,7 @@ select {
 		}
 		li{
 			display: flex;
-			margin-bottom: 25px;
+			margin-bottom: 22px;
 			&:last-child{
 				margin-bottom: 0;
 			}
@@ -947,14 +966,14 @@ select {
 }
 
 .comment{
-	padding-bottom: 60px;
+	padding-bottom: 55px;
 
 	h2{
 		text-align: center;
 		color: var(--black);
 		font-size: 18px;
 		font-weight: 700;
-		margin-bottom: 20px;
+		margin-bottom: 17px;
 	}
 
 	&__wrapper{
@@ -975,13 +994,14 @@ select {
 		img{
 			max-width: 16px;
 			height: 16px;
-			margin-bottom: 14px;
+			margin-bottom: 10px;
 		}
 		p{
 			color: var(--black);
 			font-size: 12px;
-			font-weight: 600;			
+			font-weight: 600;
 			margin-bottom: 17px;
+			letter-spacing: 0;
 		}
 	}
 
@@ -1003,7 +1023,7 @@ select {
 			color: var(--black);
 			font-size: 12px;
 			font-weight: 700;
-			margin-bottom: 5px;
+			margin-bottom: 1px;
 		}
 
 		p{
@@ -1016,7 +1036,7 @@ select {
 	}
 
 	.swiper{
-		padding-bottom: 30px;
+		padding-bottom: 17px;
 		margin-bottom: -30px;
 	}
 
@@ -1096,13 +1116,13 @@ select {
 }
 
 .footer{
-	padding: 13px 0 16px;
+	padding: 8px 0 16px;
 	background: var(--footer-bgd);
 	
 	ul{
 		display: flex;
 		align-items: center;
-		margin-bottom: 15px;
+		margin-bottom: 10px;
 		width: 100%;
 		justify-content: center;
 	}
@@ -1136,8 +1156,8 @@ select {
 	&__mail{
 		display: flex;
 		align-items: center;
-		margin-bottom: 15px;
-		padding-bottom: 15px;
+		margin-bottom: 12px;
+		padding-bottom: 11px;
 		border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 		justify-content: center;
 
