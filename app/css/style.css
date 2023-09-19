@@ -1080,7 +1080,8 @@ textarea {
 }
 @media screen and (min-width:768px) {
   .description {
-    padding-bottom: 50px
+    padding-bottom: 60px;
+    margin-top: 10px
   }
   .description__inner {
     display: -webkit-box;
@@ -1093,7 +1094,8 @@ textarea {
   }
   .description__txt {
     text-align: left;
-    margin-bottom: 0
+    margin-bottom: 0;
+    margin-top: 11px
   }
   .description__txt h2 {
     font-size: 32px;
@@ -1218,8 +1220,11 @@ textarea {
   bottom: 0
 }
 @media screen and (min-width:768px) {
+  .comment {
+    padding-bottom: 81px
+  }
   .comment h2 {
-    margin-bottom: 50px;
+    margin-bottom: 40px;
     font-size: 32px
   }
   .comment__wrapper {
@@ -1245,7 +1250,7 @@ textarea {
     margin-bottom: 27px
   }
   .comment .card__people {
-    padding-top: 27px
+    padding-top: 24px
   }
   .comment .card__people img {
     max-width: 50px;
@@ -1400,7 +1405,8 @@ textarea {
   .footer .inner__dt .footer__mail img {
     max-width: none;
     width: 18px;
-    margin-right: 9px
+    margin-right: 9px;
+    height: 18px
   }
   .footer .inner__dt .footer__mail span {
     white-space: nowrap;
@@ -1427,6 +1433,6 @@ textarea {
   .footer .inner__dt .footer__mail {
     margin-top: 0;
     margin-left: auto;
-    margin-right: 33px
+    margin-right: 42px
   }
 }

@@ -958,7 +958,8 @@ select {
 
 	@media screen and (min-width: 768px){
 		&{
-			padding-bottom: 50px;
+			padding-bottom: 60px;
+			margin-top: 10px;
 		}
 		&__inner{
 			display: flex;
@@ -968,6 +969,7 @@ select {
 		&__txt{
 			text-align: left;
 			margin-bottom: 0;
+			margin-top: 11px;
 			h2{
 				font-size: 32px;
 				margin-bottom: 32px;
@@ -1099,8 +1101,11 @@ select {
 	}
 
 	@media screen and (min-width: 768px){
+		&{
+			padding-bottom: 81px;
+		}
 		h2{
-			margin-bottom: 50px;
+			margin-bottom: 40px;
 			font-size: 32px;
 		}
 
@@ -1126,7 +1131,7 @@ select {
 		}
 
 		.card__people{
-			padding-top: 27px;
+			padding-top: 24px;
 			img{
 				max-width: 50px;
 				margin-right: 15px;
@@ -1266,6 +1271,7 @@ select {
 					max-width: none;
 					width: 18px;
 					margin-right: 9px;
+					height: 18px;
 				}
 				span{
 					white-space: nowrap;
@@ -1293,7 +1299,7 @@ select {
 			.footer__mail {
 				margin-top: 0;
 				margin-left: auto;
-				margin-right: 33px;
+				margin-right: 42px;
 			}
 		}
 	}
