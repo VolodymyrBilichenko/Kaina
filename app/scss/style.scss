@@ -145,9 +145,6 @@ select {
 	}
 
 	@media screen and (min-width: 768px){
-		&{
-			padding: 19px 15px;
-		}
 
 		&__inner {
 			gap: 40px;
@@ -214,13 +211,13 @@ select {
 	@media screen and (min-width: 768px){
 
 		&{
-			padding: 30px 0 51px;
+			padding: 35px 0 51px;
 		}
 
 		h1{
 			font-size: 40px;
 			font-weight: 700;
-			margin-bottom: 25px;
+			margin-bottom: 7px;
 			br{
 				display: none;
 			}
@@ -229,7 +226,7 @@ select {
 			font-size: 22px;
 		}
 		&__inner{
-			padding: 0 160px 0 47px;
+			padding: 0 169px 0 47px;
 		}
 
 		.banner__window{
@@ -239,7 +236,7 @@ select {
 		.banner__window_d{
 			display: block;
 			max-width: 154px;
-			margin-bottom: -10px;
+			margin-bottom: -6px;
 		}
 	}
 }
@@ -250,7 +247,6 @@ select {
 	&__list{
 		display: flex;
 		flex-wrap: wrap;
-		// justify-content: space-between;
 		align-items: flex-start;
 
 		&__card{
@@ -287,7 +283,7 @@ select {
 
 	@media screen and (min-width: 768px){
 		&{
-			padding-bottom: 51px;
+			padding-bottom: 46px;
 		}
 
 		&__list{
@@ -306,6 +302,15 @@ select {
 
 			&__card{
 				gap: 13px;
+			}
+
+			&__card_mar{
+				margin-left: 62px;
+			}
+
+			&__card_top{
+				margin: 0;
+				margin-right: -13px;
 			}
 		}
 
@@ -368,7 +373,6 @@ select {
 		&__type{
 			width: 100%;
 			display: flex;
-			align-items: center;
 			gap: 7px;
 			position: relative;
 		}
@@ -392,6 +396,11 @@ select {
 		width: 100%;
 		max-width: 660px;
 		margin-bottom: 5px;
+		opacity: 0;
+
+		&__opacity{
+			opacity: 1;
+		}
 
 		&__photo{
 			width: 8px;
@@ -604,7 +613,7 @@ select {
 
 	@media screen and (min-width: 768px){
 		&{
-			padding-bottom: 70px;
+			padding-bottom: 75px;
 		}
 		.item__price{
 			display: none;
@@ -620,8 +629,8 @@ select {
 					font-size: 14px;
 					font-weight: 700;
 					letter-spacing: 0.42px;
-					padding: 17px 18px;
-					margin-left: 29px;
+					padding: 17px 22px;
+					margin-left: 39px;
 				}
 				img{
 					width: 18px;
@@ -650,7 +659,8 @@ select {
 		}
 
 		.delivery{
-			margin-bottom: 16px;
+			margin-bottom: 19px;
+			padding: 11px 12px;
 		}
 
 		.delivery__photo{
@@ -662,11 +672,12 @@ select {
 		}
 
 		.list__item__type{
-			gap: 21px;
+			gap: 13px;
 			align-items: center;
 		}
 
 		.item__options{
+			margin-left: 7px;
 
 			img{
 				margin-right: 4px;
@@ -678,8 +689,16 @@ select {
 			}
 		}
 
+		.select__kaina{
+			margin-bottom: 6px;
+		}
+
 		.item__options__price .item__price{
-			margin-top: 0;
+			margin-top: -5px;
+			margin-left: auto;
+		}
+		.item__options__price{
+			justify-content: unset;
 		}
 
 		.select__kaina{
@@ -712,8 +731,8 @@ select {
 			}
 
 			&__orange{
-				max-width: 300px;
-				margin-left: -120px;
+				max-width: 310px;
+				margin-left: -122px;
 				p {
 					margin-left: 0px;
 				}
@@ -850,7 +869,7 @@ select {
 	@media screen and (min-width: 768px){
 		&{
 			top: -20px;
-			left: -30px;
+			left: -21px;
 		}
 
 		.rating-container{
@@ -926,7 +945,7 @@ select {
 
 	@media screen and (min-width: 768px){
 		&{
-			padding-bottom: 70px;
+			padding-bottom: 50px;
 		}
 		&__inner{
 			display: flex;
@@ -938,18 +957,19 @@ select {
 			margin-bottom: 0;
 			h2{
 				font-size: 32px;
-				margin-bottom: 40px;
+				margin-bottom: 32px;
 			}
 
 			p{
 				font-size: 18px;
-				margin-bottom: 10px;
+				margin-bottom: 25px;
 			}
 
 		}
 		&__option{
 			ul{
 				padding: 40px 36px;
+				max-width: 350px;
 			}
 			li{
 				margin-bottom: 60px;
@@ -973,7 +993,7 @@ select {
 		color: var(--black);
 		font-size: 18px;
 		font-weight: 700;
-		margin-bottom: 17px;
+		margin-bottom: 45px;
 	}
 
 	&__wrapper{
@@ -1217,7 +1237,7 @@ select {
 			display: flex;
 			flex-direction: column;
 			align-items: center;
-			margin-bottom: 25px;
+			margin-bottom: 15px;
 			padding-bottom: 25px;
 			border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 
@@ -1260,6 +1280,7 @@ select {
 			.footer__mail {
 				margin-top: 0;
 				margin-left: auto;
+				margin-right: 33px;
 			}
 		}
 	}
