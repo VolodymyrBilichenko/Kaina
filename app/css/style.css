@@ -192,7 +192,8 @@ button {
   font-family: "Avenir Next LT Pro";
   font-weight: 400;
   font-style: normal;
-  line-height: normal
+  line-height: normal;
+  letter-spacing: 0
 }
 :root {
   --container: 1110px;
@@ -341,7 +342,7 @@ textarea {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  padding: 6px 19px 0 19px;
+  padding: 6px 19px 4px 19px;
   border-radius: 12px;
   gap: 13px;
   overflow: hidden
@@ -556,7 +557,7 @@ textarea {
   display: block
 }
 .shopping .delivery__photo {
-  width: 8px;
+  width: 7px;
   margin-right: 5px
 }
 .shopping .delivery__txt {
@@ -1119,7 +1120,7 @@ textarea {
   color: var(--black);
   font-size: 18px;
   font-weight: 700;
-  margin-bottom: 45px
+  margin-bottom: 20px
 }
 .comment__wrapper {
   display: -webkit-box;

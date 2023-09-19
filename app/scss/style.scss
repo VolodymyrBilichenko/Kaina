@@ -8,6 +8,7 @@
 	font-weight: normal;
 	font-style: normal;
 	line-height: normal;
+	letter-spacing: 0;
 }
 
 :root{
@@ -173,7 +174,7 @@ select {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-		padding: 6px 19px 0 19px;
+		padding: 6px 19px 4px 19px;
 		border-radius: 12px;
 		gap: 13px;
 		overflow: hidden;
@@ -405,7 +406,7 @@ select {
 		}
 
 		&__photo{
-			width: 8px;
+			width: 7px;
 			margin-right: 5px;
 		}
 
@@ -1000,7 +1001,7 @@ select {
 		color: var(--black);
 		font-size: 18px;
 		font-weight: 700;
-		margin-bottom: 45px;
+		margin-bottom: 20px;
 	}
 
 	&__wrapper{
