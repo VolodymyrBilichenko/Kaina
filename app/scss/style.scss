@@ -121,7 +121,7 @@ select {
 
 
 
-.header{	
+.header{
 	background-color: var(--white);
 
 	&__inner{
@@ -141,7 +141,7 @@ select {
 
 	&__txt{
 		color: var(--black);
-		font-size: 10px;
+		font-size: 13px;
 		font-weight: 500;
 	}
 
@@ -195,7 +195,7 @@ select {
 		&__desc{
 			color: var(--white);
 			text-shadow: 0px 2px 10px rgba(0, 0, 0, 0.25);
-			font-size: 12px;
+			font-size: 14px;
 		}
 	}
 
@@ -256,7 +256,7 @@ select {
 		}
 
 		&__card_mar{
-			margin-left: 32px;
+			margin-left: 15px;
 		}
 
 		&__card_top{
@@ -269,7 +269,7 @@ select {
 
 		&__txt{
 			color: var(--black);
-			font-size: 12px;
+			font-size: 14px;
 			line-height: 1.2;
 
 			&_bold{
@@ -339,12 +339,14 @@ select {
 			gap: 4px;
 
 			color: var(--black);
-			font-size: 10px;
+			font-size: 13px;
 			transition: all .3s ease;
 		}
 
 		&__icon{
 			width: 11px;
+			height: 11px;
+			margin-bottom: 2px;
 		}
 	}
 
@@ -380,12 +382,29 @@ select {
 
 		&__photo{
 			max-width: 100px;
+			border-radius: 8px;
+			height: inherit;
 		}
 
 		&__options{
 			width: 100%;
 		}
 
+	}
+
+	.photo__card{
+		position: relative;
+		width: 100%;
+		max-width: 100px;
+
+		p{
+			color: var(--black);
+			font-size: 11px;
+
+			position: absolute;
+			top: 11px;
+			right: 12px;
+		}
 	}
 
 	.delivery{
@@ -406,18 +425,20 @@ select {
 		}
 
 		&__photo{
-			width: 7px;
+			width: 11px;
+			height: 11px;
 			margin-right: 5px;
 		}
 
 		&__txt{
 			color: var(--green);
-			font-size: 8px;
+			font-size: 10px;
 			font-weight: 600;
 		}
 
 		&__inner{
 			display: flex;
+			align-items: center;
 		}
 	}
 
@@ -461,7 +482,6 @@ select {
 		button{
 			display: flex;
 			align-items: center;
-			height: 34px;
 			margin-top: auto;
 			margin-bottom: 4px;
 			margin-right: 8px;
@@ -473,7 +493,7 @@ select {
 			transition: all 0.3s ease;
 
 			color: var(--white);
-			font-size: 10px;
+			font-size: 13px;
 			font-weight: 700;
 			letter-spacing: 0.3px;
 			width: auto;
@@ -485,6 +505,8 @@ select {
 
 			img{
 				width: 10px;
+				height: 10px;
+				margin-top: 2px;
 			}
 
 			span{
@@ -519,7 +541,7 @@ select {
 		label{
 			color: var(--grey);
 			margin-bottom: 4px;
-			font-size: 8px;
+			font-size: 11px;
 			font-weight: 500;
 		}
 
@@ -646,6 +668,7 @@ select {
 				}
 				img{
 					width: 18px;
+					height: 18px;
 				}
 			}
 		}
@@ -657,6 +680,8 @@ select {
 
 				img{
 					width: 18px;
+					height: 18px;
+					margin-bottom: 0;
 				}
 			}
 		}
@@ -664,6 +689,16 @@ select {
 		.list__item{
 			padding: 10px 26px 10px 10px;
 			margin-bottom: 26px;
+		}
+
+		.photo__card {
+			max-width: 154px;
+
+			p {
+				font-size: 15px;
+				top: 17px;
+				right: 20px;
+			}
 		}
 
 		.list__item__photo{
@@ -678,6 +713,7 @@ select {
 
 		.delivery__photo{
 			width: 17px;
+			height: 17px;
 			margin-right: 8px;
 		}
 		.delivery__txt{
@@ -695,6 +731,7 @@ select {
 			img{
 				margin-right: 4px;
 				width: 15px;
+				height: 15px;
 			}
 
 			p{
@@ -913,8 +950,7 @@ select {
 	&__txt{
 		text-align: center;
 		margin-bottom: 26px;
-		width: 100%;
-		max-width: 635px;
+		width: 100%;		
 
 		h2{
 			color: var(--black);
@@ -924,7 +960,7 @@ select {
 		}
 		p{
 			color: var(--black);
-			font-size: 12px;
+			font-size: 14px;
 			margin-bottom: 12px;
 			&:last-child{
 				margin-bottom: 0;
@@ -952,7 +988,7 @@ select {
 		}
 		p{
 			color: var(--black);
-			font-size: 12px;
+			font-size: 14px;
 		}
 	}
 
@@ -970,6 +1006,7 @@ select {
 			text-align: left;
 			margin-bottom: 0;
 			margin-top: 11px;
+			max-width: 635px;
 			h2{
 				font-size: 32px;
 				margin-bottom: 32px;
@@ -1058,15 +1095,6 @@ select {
 			color: var(--black);
 			font-size: 12px;
 			font-weight: 700;
-			margin-bottom: 1px;
-		}
-
-		p{
-			color: var(--black);
-			font-size: 8px;
-			border-bottom: none;
-			padding-bottom: 0;
-			margin-bottom: 0;
 		}
 	}
 
@@ -1139,11 +1167,6 @@ select {
 
 			h3{
 				font-size: 16px;
-				margin-bottom: 10px;
-			}
-
-			P{
-				font-size: 12px;
 			}
 		}
 
@@ -1160,13 +1183,13 @@ select {
 	ul{
 		display: flex;
 		align-items: center;
-		margin-bottom: 10px;
+		margin-bottom: 14px;
 		width: 100%;
 		justify-content: center;
 	}
 
 	li{
-		margin-right: 15px;
+		margin-right: 10px;
 		&:last-child{
 			margin-right: 0;
 			border-right: none;
@@ -1174,12 +1197,12 @@ select {
 		}
 		a{
 			color: rgba(53, 60, 69, 0.60);
-			font-size: 10px;
+			font-size: 13px;
 			font-weight: 500;			
 			transition: all .3s ease;	
 			white-space: nowrap;		
 			border-right: 1px solid rgba(131, 135, 140, 0.30);
-			padding-right: 15px;
+			padding-right: 10px;
 		}
 		a:hover{
 			color: var(--black);
@@ -1204,20 +1227,22 @@ select {
 		}
 
 		img{
-			max-width: 9px;
+			max-width: 11px;
+			height: 11px;
 			margin-right: 6px;
 		}
 		span{
 			display: flex;
 			align-items: center;
 			color: rgba(53, 60, 69, 0.60);
-			font-size: 10px;
+			font-size: 13px;
 			font-weight: 500;
 			line-height: 163.5%;
+			white-space: nowrap;
 		}
 		a{
 			color: rgba(53, 60, 69, 0.60);
-			font-size: 10px;
+			font-size: 13px;
 			font-weight: 500;
 			line-height: 163.5%;
 			margin-left: 5px;
@@ -1226,7 +1251,7 @@ select {
 
 	&__copir{
 		color: rgba(53, 60, 69, 0.60);
-		font-size: 8px;
+		font-size: 11px;
 		font-weight: 500;
 		line-height: 163.5%;
 		text-align: center;

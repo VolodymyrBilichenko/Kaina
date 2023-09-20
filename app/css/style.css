@@ -310,7 +310,7 @@ textarea {
 }
 .header__txt {
   color: var(--black);
-  font-size: 10px;
+  font-size: 13px;
   font-weight: 500
 }
 @media screen and (min-width:768px) {
@@ -361,7 +361,7 @@ textarea {
 .banner__txt__desc {
   color: var(--white);
   text-shadow: 0 2px 10px rgba(0,0,0,.25);
-  font-size: 12px
+  font-size: 14px
 }
 .banner__window {
   margin-top: -3px;
@@ -419,7 +419,7 @@ textarea {
   gap: 5px
 }
 .option__list__card_mar {
-  margin-left: 32px
+  margin-left: 15px
 }
 .option__list__card_top {
   margin-top: 13px
@@ -429,7 +429,7 @@ textarea {
 }
 .option__list__txt {
   color: var(--black);
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.2
 }
 .option__list__txt_bold {
@@ -491,13 +491,15 @@ textarea {
   align-items: center;
   gap: 4px;
   color: var(--black);
-  font-size: 10px;
+  font-size: 13px;
   -webkit-transition: all .3s ease;
   -o-transition: all .3s ease;
   transition: all .3s ease
 }
 .shopping .list__href__icon {
-  width: 11px
+  width: 11px;
+  height: 11px;
+  margin-bottom: 2px
 }
 .shopping .item__nemokamas {
   width: 100%
@@ -531,10 +533,24 @@ textarea {
   position: relative
 }
 .shopping .list__item__photo {
-  max-width: 100px
+  max-width: 100px;
+  border-radius: 8px;
+  height: inherit
 }
 .shopping .list__item__options {
   width: 100%
+}
+.shopping .photo__card {
+  position: relative;
+  width: 100%;
+  max-width: 100px
+}
+.shopping .photo__card p {
+  color: var(--black);
+  font-size: 11px;
+  position: absolute;
+  top: 11px;
+  right: 12px
 }
 .shopping .delivery {
   display: -webkit-box;
@@ -557,18 +573,22 @@ textarea {
   display: block
 }
 .shopping .delivery__photo {
-  width: 7px;
+  width: 11px;
+  height: 11px;
   margin-right: 5px
 }
 .shopping .delivery__txt {
   color: var(--green);
-  font-size: 8px;
+  font-size: 10px;
   font-weight: 600
 }
 .shopping .delivery__inner {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center
 }
 .shopping .item__options {
   margin-top: 7px
@@ -616,7 +636,6 @@ textarea {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  height: 34px;
   margin-top: auto;
   margin-bottom: 4px;
   margin-right: 8px;
@@ -630,7 +649,7 @@ textarea {
   -o-transition: all .3s ease;
   transition: all .3s ease;
   color: var(--white);
-  font-size: 10px;
+  font-size: 13px;
   font-weight: 700;
   letter-spacing: .3px;
   width: auto;
@@ -640,7 +659,9 @@ textarea {
   background-color: var(--orange-hover)
 }
 .shopping .item__price button img {
-  width: 10px
+  width: 10px;
+  height: 10px;
+  margin-top: 2px
 }
 .shopping .item__price button span {
   display: none;
@@ -677,7 +698,7 @@ textarea {
 .shopping .select__kaina label {
   color: var(--grey);
   margin-bottom: 4px;
-  font-size: 8px;
+  font-size: 11px;
   font-weight: 500
 }
 .shopping .select__kaina p {
@@ -807,18 +828,29 @@ textarea {
     margin-left: 39px
   }
   .shopping .item__options__price .item__price img {
-    width: 18px
+    width: 18px;
+    height: 18px
   }
   .shopping .list__href a {
     font-size: 16px;
     gap: 8px
   }
   .shopping .list__href a img {
-    width: 18px
+    width: 18px;
+    height: 18px;
+    margin-bottom: 0
   }
   .shopping .list__item {
     padding: 10px 26px 10px 10px;
     margin-bottom: 26px
+  }
+  .shopping .photo__card {
+    max-width: 154px
+  }
+  .shopping .photo__card p {
+    font-size: 15px;
+    top: 17px;
+    right: 20px
   }
   .shopping .list__item__photo {
     max-width: 154px
@@ -830,6 +862,7 @@ textarea {
   }
   .shopping .delivery__photo {
     width: 17px;
+    height: 17px;
     margin-right: 8px
   }
   .shopping .delivery__txt {
@@ -846,7 +879,8 @@ textarea {
   }
   .shopping .item__options img {
     margin-right: 4px;
-    width: 15px
+    width: 15px;
+    height: 15px
   }
   .shopping .item__options p {
     font-size: 14px
@@ -1037,8 +1071,7 @@ textarea {
 .description__txt {
   text-align: center;
   margin-bottom: 26px;
-  width: 100%;
-  max-width: 635px
+  width: 100%
 }
 .description__txt h2 {
   color: var(--black);
@@ -1048,7 +1081,7 @@ textarea {
 }
 .description__txt p {
   color: var(--black);
-  font-size: 12px;
+  font-size: 14px;
   margin-bottom: 12px
 }
 .description__txt p:last-child {
@@ -1076,7 +1109,7 @@ textarea {
 }
 .description__option p {
   color: var(--black);
-  font-size: 12px
+  font-size: 14px
 }
 @media screen and (min-width:768px) {
   .description {
@@ -1095,7 +1128,8 @@ textarea {
   .description__txt {
     text-align: left;
     margin-bottom: 0;
-    margin-top: 11px
+    margin-top: 11px;
+    max-width: 635px
   }
   .description__txt h2 {
     font-size: 32px;
@@ -1182,15 +1216,7 @@ textarea {
 .comment .card__people h3 {
   color: var(--black);
   font-size: 12px;
-  font-weight: 700;
-  margin-bottom: 1px
-}
-.comment .card__people p {
-  color: var(--black);
-  font-size: 8px;
-  border-bottom: none;
-  padding-bottom: 0;
-  margin-bottom: 0
+  font-weight: 700
 }
 .comment .swiper {
   padding-bottom: 17px;
@@ -1257,11 +1283,7 @@ textarea {
     margin-right: 15px
   }
   .comment .card__people h3 {
-    font-size: 16px;
-    margin-bottom: 10px
-  }
-  .comment .card__people P {
-    font-size: 12px
+    font-size: 16px
   }
   .comment .swiper-slide-active {
     margin-right: 0
@@ -1278,14 +1300,14 @@ textarea {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin-bottom: 10px;
+  margin-bottom: 14px;
   width: 100%;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center
 }
 .footer li {
-  margin-right: 15px
+  margin-right: 10px
 }
 .footer li:last-child {
   margin-right: 0;
@@ -1294,14 +1316,14 @@ textarea {
 }
 .footer li a {
   color: rgba(53,60,69,.6);
-  font-size: 10px;
+  font-size: 13px;
   font-weight: 500;
   -webkit-transition: all .3s ease;
   -o-transition: all .3s ease;
   transition: all .3s ease;
   white-space: nowrap;
   border-right: 1px solid rgba(131,135,140,.3);
-  padding-right: 15px
+  padding-right: 10px
 }
 .footer li a:hover {
   color: var(--black)
@@ -1328,7 +1350,8 @@ textarea {
   display: none
 }
 .footer__mail img {
-  max-width: 9px;
+  max-width: 11px;
+  height: 11px;
   margin-right: 6px
 }
 .footer__mail span {
@@ -1339,20 +1362,21 @@ textarea {
   -ms-flex-align: center;
   align-items: center;
   color: rgba(53,60,69,.6);
-  font-size: 10px;
+  font-size: 13px;
   font-weight: 500;
-  line-height: 163.5%
+  line-height: 163.5%;
+  white-space: nowrap
 }
 .footer__mail a {
   color: rgba(53,60,69,.6);
-  font-size: 10px;
+  font-size: 13px;
   font-weight: 500;
   line-height: 163.5%;
   margin-left: 5px
 }
 .footer__copir {
   color: rgba(53,60,69,.6);
-  font-size: 8px;
+  font-size: 11px;
   font-weight: 500;
   line-height: 163.5%;
   text-align: center
