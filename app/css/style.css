@@ -838,7 +838,7 @@ textarea {
   .shopping .list__href a img {
     width: 18px;
     height: 18px;
-    margin-bottom: 0
+    margin-bottom: 4px
   }
   .shopping .list__item {
     padding: 10px 26px 10px 10px;
@@ -880,10 +880,11 @@ textarea {
   .shopping .item__options img {
     margin-right: 4px;
     width: 15px;
-    height: 15px
+    height: 15px;
+    margin-top: 0
   }
   .shopping .item__options p {
-    font-size: 14px
+    font-size: 13px
   }
   .shopping .select__kaina {
     margin-bottom: 6px
@@ -933,7 +934,7 @@ textarea {
     height: 12px
   }
   .shopping .sales p {
-    font-size: 14px
+    font-size: 13px
   }
   .shopping .sales p br {
     display: none
@@ -941,10 +942,10 @@ textarea {
 }
 @media screen and (min-width:900px) {
   .shopping .select__kaina select {
-    font-size: 24px
+    font-size: 22px
   }
   .shopping .select__kaina p {
-    font-size: 24px
+    font-size: 22px
   }
 }
 .rating {

@@ -681,7 +681,7 @@ select {
 				img{
 					width: 18px;
 					height: 18px;
-					margin-bottom: 0;
+					margin-bottom: 4px;
 				}
 			}
 		}
@@ -732,10 +732,11 @@ select {
 				margin-right: 4px;
 				width: 15px;
 				height: 15px;
+				margin-top: 0;
 			}
 
 			p{
-				font-size: 14px;
+				font-size: 13px;
 			}
 		}
 
@@ -796,7 +797,7 @@ select {
 			}
 
 			p {
-				font-size: 14px;
+				font-size: 13px;
 				br{
 					display: none;
 				}
@@ -806,10 +807,10 @@ select {
 	@media screen and (min-width: 900px){
 		.select__kaina{
 			select{
-				font-size: 24px;
+				font-size: 22px;
 			}
 			p{
-				font-size: 24px;
+				font-size: 22px;
 			}
 		}
 	}
