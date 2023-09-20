@@ -430,7 +430,7 @@ select {
 
 		&__txt{
 			color: var(--green);
-			font-size: 10px;
+			font-size: 11px;
 			font-weight: 600;
 		}
 
@@ -459,7 +459,7 @@ select {
 
 		p{
 			color: var(--black);
-			font-size: 10px;
+			font-size: 12px;
 			font-weight: 600;
 			letter-spacing: normal;
 		}
@@ -545,7 +545,7 @@ select {
 
 		p{
 			color: var(--black);
-			font-size: 16px;
+			font-size: 17px;
 			font-weight: 600;
 			text-transform: capitalize;
 		}
@@ -553,7 +553,7 @@ select {
 		select{
 			background: transparent;
 			color: var(--grey-sel);
-			font-size: 16px;
+			font-size: 17px;
 			font-weight: 600;
 			text-transform: capitalize;
 			-moz-appearance: none;
@@ -581,6 +581,7 @@ select {
 			background-image: url('../img/arrow-down.svg');
 			background-size: cover;
 			background-repeat: no-repeat;
+			margin-top: 1px;
 		}
 	}
 
@@ -607,13 +608,13 @@ select {
 				max-width: 8px;
 				margin-right: 5px;
 				height: 8px;
-				margin-left: 12px;
+				margin-left: 5px;
 				margin-top: 2px;
 			}
 		}
 		p{
 			color: var(--white);
-			font-size: 8px;
+			font-size: 9px;
 			font-weight: 600;
 			text-transform: uppercase;
 			margin-top: 2px;
@@ -667,6 +668,7 @@ select {
 				img{
 					width: 18px;
 					height: 18px;
+					margin-top: 0;
 				}
 			}
 		}
@@ -872,6 +874,14 @@ select {
 
 	.rating-circle.green {
 		background: conic-gradient(#52B405 0% 97%, transparent 97% 100%);
+
+		p {
+			color: #52B405;
+		}
+	}
+		
+	.rating-circle.green-eight-f {
+		background: conic-gradient(#52B405 0% 85%, transparent 85% 100%);
 
 		p {
 			color: #52B405;
