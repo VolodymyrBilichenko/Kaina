@@ -353,23 +353,22 @@ select {
 		width: 100%;
 	}
 
+	.list__item_border{
+		border-bottom: 3px solid var(--blue);
+	}
+
 	.list__item{
 		width: 100%;
 		border-radius: 12px;
 		background: #FFF;
 		box-shadow: 0px 4px 50px 0px rgba(0, 0, 0, 0.10);
 		padding: 10px 10px 19px;
-		transition: all 0.3s ease;
-		border-bottom: 3px solid var(--white);
+		transition: all 0.3s ease;		
 		margin-bottom: 16px;
 		position: relative;
 
 		&:last-child{
 			margin-bottom: 0;
-		}
-
-		&:hover{
-			border-bottom: 3px solid var(--blue);
 		}
 
 		&__type{
@@ -505,7 +504,7 @@ select {
 			img{
 				width: 10px;
 				height: 10px;
-				margin-top: 2px;
+				margin-top: -2px;
 			}
 
 			span{

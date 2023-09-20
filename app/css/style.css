@@ -503,6 +503,9 @@ textarea {
 .shopping .item__nemokamas {
   width: 100%
 }
+.shopping .list__item_border {
+  border-bottom: 3px solid var(--blue)
+}
 .shopping .list__item {
   width: 100%;
   border-radius: 12px;
@@ -513,15 +516,11 @@ textarea {
   -webkit-transition: all .3s ease;
   -o-transition: all .3s ease;
   transition: all .3s ease;
-  border-bottom: 3px solid var(--white);
   margin-bottom: 16px;
   position: relative
 }
 .shopping .list__item:last-child {
   margin-bottom: 0
-}
-.shopping .list__item:hover {
-  border-bottom: 3px solid var(--blue)
 }
 .shopping .list__item__type {
   width: 100%;
@@ -660,7 +659,7 @@ textarea {
 .shopping .item__price button img {
   width: 10px;
   height: 10px;
-  margin-top: 2px
+  margin-top: -2px
 }
 .shopping .item__price button span {
   display: none;
